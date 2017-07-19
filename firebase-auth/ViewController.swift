@@ -7,8 +7,29 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuthUI
 
 class ViewController: UIViewController {
+    
+    var handle: AuthStateDidChangeListenerHandle?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let authUI = FUIAuth.defaultAuthUI()
+        authUI?.delegate = self
+        
+        handle = Auth.auth().addStateDidChangeListener({ ( auth, user ) in
+            
+            if Auth.auth().currentUser == nil {
+                let authViewController = authUI?.authViewController()
+                self.present(authViewController!, animated: true, completion: nil)
+            }
+            
+        })
+        
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +42,11 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        print("did sign in with user \(String(describing: user)) and errors? \(String(describing: error))")
+    }
 }
 
