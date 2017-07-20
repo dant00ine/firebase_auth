@@ -11,5 +11,6 @@ target 'firebase-auth' do
     pod 'Firebase/Auth'
     # firebase UI
     pod 'FirebaseUI/Auth'
+    pod 'Firebase/Storage'
 
 end

@@ -15,6 +15,7 @@
 		C0230A6A1F1FCECA00431C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0230A681F1FCECA00431C75 /* LaunchScreen.storyboard */; };
 		C0230A721F1FCEF800431C75 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C0230A711F1FCEF800431C75 /* Podfile */; };
 		C03F28081F1FD00800B2AB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03F28071F1FD00800B2AB67 /* GoogleService-Info.plist */; };
+		C03F280A1F20077600B2AB67 /* UploadMemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F28091F20077600B2AB67 /* UploadMemeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C0230A6B1F1FCECA00431C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0230A711F1FCEF800431C75 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C03F28071F1FD00800B2AB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C03F28091F20077600B2AB67 /* UploadMemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadMemeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				C0230A5F1F1FCECA00431C75 /* AppDelegate.swift */,
 				C0230A611F1FCECA00431C75 /* ViewController.swift */,
 				C0230A631F1FCECA00431C75 /* Main.storyboard */,
+				C03F28091F20077600B2AB67 /* UploadMemeViewController.swift */,
 				C0230A661F1FCECA00431C75 /* Assets.xcassets */,
 				C0230A681F1FCECA00431C75 /* LaunchScreen.storyboard */,
 				C0230A6B1F1FCECA00431C75 /* Info.plist */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03F280A1F20077600B2AB67 /* UploadMemeViewController.swift in Sources */,
 				C0230A621F1FCECA00431C75 /* ViewController.swift in Sources */,
 				C0230A601F1FCECA00431C75 /* AppDelegate.swift in Sources */,
 			);
